@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Resume Generator</title>
+  <link rel="stylesheet" href="stylesheet.css">
+  <script defer src="index.js"></script>
+</head>
+<body>
+  <form id="resume-form">
+    <h1>Dynamic Resume Generator</h1>
+    
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" name="phone" required>
+    
+    <label for="location">Location:</label>
+    <input type="text" id="location" name="location" required>
+    
+    <h2>Education</h2>
+    <label for="education-institution">Institution:</label>
+    <input type="text" id="education-institution" name="education-institution" required>
+    
+    <label for="education-degree">Degree:</label>
+    <input type="text" id="education-degree" name="education-degree" required>
+    
+    <label for="education-duration">Duration:</label>
+    <input type="text" id="education-duration" name="education-duration" required>
+    
+    <h2>Work Experience</h2>
+    <label for="work-job-title">Job Title:</label>
+    <input type="text" id="work-job-title" name="work-job-title">
+    
+    <label for="work-company">Company:</label>
+    <input type="text" id="work-company" name="work-company">
+    
+    <label for="work-duration">Duration:</label>
+    <input type="text" id="work-duration" name="work-duration">
+    
+    <h2>Skills</h2>
+    <label for="skills">Skills (comma-separated):</label>
+    <input type="text" id="skills" name="skills">
+    
+    <h2>Profile Picture</h2>
+    <input type="file" id="profile-picture" name="profile-picture" accept="image/*">
+    <img id="profile-preview" alt="Profile Preview" style="max-width: 150px; display: block; margin-top: 10px;">
+    
+    <button id="generate-resume">Generate Resume</button>
+  </form>
+  
+  <div id="resume-container" style="margin-top: 20px;"></div>
+</body>
+</html>

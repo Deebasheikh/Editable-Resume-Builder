@@ -1,0 +1,132 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+  }
+  
+  form, #resume-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  label {
+    font-size: 14px;
+  }
+  
+  input, button {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  img#profile-preview {
+    max-width: 150px;
+    display: block;
+    margin-top: 10px;
+  }
+  
+  #resume-container header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  #resume-container img {
+    max-width: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+  }
+  
+  #resume-container section {
+    margin-bottom: 20px;
+  }
+  
+  #resume-container h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  #resume-container ul {
+    padding-left: 20px;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    body {
+      font-size: 14px;
+    }
+  
+    form {
+      padding: 15px;
+      margin: 5px;
+    }
+  
+    input, button {
+      font-size: 13px;
+      padding: 8px;
+    }
+  
+    img#profile-preview {
+      max-width: 100px;
+    }
+  
+    #resume-container {
+      padding: 15px;
+    }
+  
+    #resume-container img {
+      max-width: 80px;
+    }
+  
+    #resume-container h2 {
+      font-size: 16px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    form, #resume-container {
+      padding: 10px;
+      margin: 5px;
+    }
+  
+    input, button {
+      font-size: 12px;
+      padding: 6px;
+    }
+  
+    img#profile-preview {
+      max-width: 80px;
+    }
+  
+    #resume-container img {
+      max-width: 60px;
+    }
+  
+    #resume-container h2 {
+      font-size: 14px;
+    }
+  }
+  
+  
